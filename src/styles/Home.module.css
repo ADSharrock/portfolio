@@ -246,9 +246,18 @@
     gap: 2rem;
   }
 
+  .image {
+    width: 100% !important;
+  }
+
   .tiles {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+
+  .image {
+    width: fit-content;
+    height: fit-content;
   }
 
   .content p {
