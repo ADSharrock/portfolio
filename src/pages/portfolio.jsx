@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Sidebar from "@/components/Sidebar";
 import Tile from "@/components/Tile";
+import Image from "next/image";
 
 const portfolio = () => {
   return (
