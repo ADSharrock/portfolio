@@ -246,6 +246,11 @@
     gap: 2rem;
   }
 
+  .tiles {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
   .content p {
     text-align: center;
   }
