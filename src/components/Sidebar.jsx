@@ -9,7 +9,7 @@ const Sidebar = () => {
       <Link href="/" className={styles.navLink} style={asPath === "/" ? {color: "#f59e0b", opacity: 1}: {}}>
         About
       </Link>
-      <Link href="/portfolio" className={styles.navLink} style={asPath === "/portfolio" ? {color: "#f59e0b", opacity: 1}: {}}>
+      <Link href="/portfolio" className={styles.navLink} style={asPath.includes("/portfolio") ? {color: "#f59e0b", opacity: 1}: {}}>
         Portfolio
       </Link>
       <Link href="/contact" className={styles.navLink} style={asPath === "/contact" ? {color: "#f59e0b", opacity: 1}: {}}>

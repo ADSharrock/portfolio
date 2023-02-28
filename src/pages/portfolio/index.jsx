@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Sidebar from "@/components/Sidebar";
 import Tile from "@/components/Tile";
 import Image from "next/image";
-import { GamesWorkedOn } from "@/media";
+import { GamesWorkedOn, Nationwide, NorthernLights, TheSaucyFishCo } from "@/media";
 
 const portfolio = () => {
   return (
@@ -17,15 +17,12 @@ const portfolio = () => {
         <div className={styles.container}>
           <Sidebar />
           <div className={styles.content}>
-            {/* <div className={styles.tiles}> */}
-              <Image src={GamesWorkedOn} alt="Games Worked On" width={"100%"} height={"100%"} title="Game Thumbnails" className={styles.image}/>
-              {/* <Tile className={styles.div1}/>
-              <Tile className={styles.div2}/>
-              <Tile className={styles.div3}/>
-              <Tile className={styles.div4}/>
-              <Tile className={styles.div5}/>
-              <Tile className={styles.div6}/> */}
-            {/* </div> */}
+            <div className={styles.tiles}>
+              {/* <Image src={GamesWorkedOn} alt="Games Worked On" width={"100%"} height={"100%"} title="Game Thumbnails" className={styles.image}/> */}
+              <Tile className={styles.div1} image={Nationwide} link={"/nationwide"}/>
+              <Tile className={styles.div2} image={NorthernLights} link={"/northern-lights"}/>
+              <Tile className={styles.div3} image={TheSaucyFishCo} link={"/the-saucy-fish-co"}/>
+            </div>
           </div>
         </div>
       </main>
